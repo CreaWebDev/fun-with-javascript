@@ -10,13 +10,13 @@
     <title>Main</title>
 </head>
 <body style="margin-top: 100px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color:mistyrose; color: darkred;">
+    <canvas>Canvas is not supported in your browser.</canvas>
     <h2 style="text-align: center;">
         Fun with JavaScript, SVG & Styling
     </h2>
-    <div id="black-fri" style="text-align: center; margin-top: 50px; display: flex; flex-direction: column; padding: 0 80px;">
+    <div id="fun" style="text-align: center; margin-top: 50px; display: flex; flex-direction: column; padding: 0 80px;">
         <h3 style="color: darkslategrey;">Countdown clocks for New Years Eve!</h3><br>
-        <p style="color: gray">[ Watch when the minutes change ]</p>
-        <canvas></canvas>
+        <p style="color: gray">[ Hover or touch the clocks and watch the fireworks ]</p>
         <div id="countdown--clock">
             <div class="countdownbox test" id="day">
                 <section class="days">
@@ -59,7 +59,6 @@
                 </section>
             </div>
         </div>
-        <div id="testing"></div>
         <p class="site-footer__headline">
             Copyright 2020 - Pia Roel Jørgensen
         </p>
@@ -210,7 +209,7 @@
             fw2.update();
 
             if (fw1.life == LIFE * delay) fw2 = new Firework;
-            if (fw2.life == LIFE * delay) fw1 = new Firework;
+            // if (fw2.life == LIFE * delay) fw1 = new Firework;
 
             window.requestAnimationFrame(main);
         }
